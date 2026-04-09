@@ -1,16 +1,19 @@
-import {ImageBackground, ScrollView, StyleSheet} from 'react-native';
+import {ScrollView, StyleSheet} from 'react-native';
+import LinearGradient from 'react-native-linear-gradient';
 
 const Owwlmindthinkinnlayt = ({children}) => {
   return (
-    <ImageBackground
+    <LinearGradient
       style={styles.background}
-      source={require('../../assets/i/owwlmindthibg.png')}>
+      colors={['#3E4464', '#24283D']}
+      start={{x: 0, y: 0}}
+      end={{x: 1, y: 1}}>
       <ScrollView
         contentContainerStyle={styles.content}
         showsVerticalScrollIndicator={false}>
         {children}
       </ScrollView>
-    </ImageBackground>
+    </LinearGradient>
   );
 };
 
