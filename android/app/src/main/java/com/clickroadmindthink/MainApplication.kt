@@ -1,4 +1,4 @@
-package com.owlmindthinkingroad
+package com.clickroadmindthink
 
 import android.app.Application
 import com.facebook.react.PackageList
